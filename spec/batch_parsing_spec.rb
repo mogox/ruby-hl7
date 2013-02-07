@@ -1,8 +1,5 @@
 # encoding: UTF-8
-$: << '../lib'
-require 'ruby-hl7'
-require 'test/hl7_messages'
-require 'core_ext/string'
+require 'spec_helper'
 
 describe HL7::Message do
   context 'batch parsing' do

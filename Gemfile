@@ -8,5 +8,4 @@ gem 'technicalpickles-jeweler'
 group :test, :development do
   gem 'rcov'
   gem 'rspec', '< 2.0.0'
-  gem 'debugger'
 end

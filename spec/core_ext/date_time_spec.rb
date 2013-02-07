@@ -1,4 +1,4 @@
-require File.expand_path('../../../lib/core_ext/date_time', __FILE__)
+require 'spec_helper'
 
 describe Date do
 

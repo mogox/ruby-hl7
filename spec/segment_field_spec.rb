@@ -1,6 +1,5 @@
 # encoding: UTF-8
-$: << '../lib'
-require 'ruby-hl7'
+require 'spec_helper'
 
 class MockSegment < HL7::Message::Segment
   weight 1

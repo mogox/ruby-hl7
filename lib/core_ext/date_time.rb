@@ -47,3 +47,16 @@ class DateTime
   include HL7Time
 end
 
+# TODO
+# parse an hl7 formatted date
+#def Date.from_hl7( hl7_date )
+#end
+
+#def Date.to_hl7_short( ruby_date )
+#end
+
+#def Date.to_hl7_med( ruby_date )
+#end
+
+#def Date.to_hl7_long( ruby_date )
+#end
