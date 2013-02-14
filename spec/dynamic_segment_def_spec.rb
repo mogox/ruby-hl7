@@ -30,11 +30,7 @@ describe 'dynamic segment definition' do
         s.e2 = "5678"
       end
 
-      if RUBY_ENGINE == 'rbx'
-        lambda { e3 "TEST" }.should raise_error(Rubinius::Internal)
-      else
-        lambda { e3 "TEST" }.should raise_error(NoMethodError)
-      end
+      lambda { e3 "TEST" }.should raise_error(NoMethodError)
       seg.to_s.should == "MSK|1234|5678"
     end
   end

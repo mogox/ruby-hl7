@@ -56,7 +56,7 @@ class HL7::Message::Segment
 
       eval( to_do, blk.binding )
       yield self
-      eval( "undef method_missing", blk.binding )
+      eval( "class << self; remove_method :method_missing;end", blk.binding )
     end
   end
 
